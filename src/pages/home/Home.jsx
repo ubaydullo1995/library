@@ -4,25 +4,20 @@ import './home.css'
 // Import images
 import Rukzak from '../../asssets/rukzak.png' 
 import DressMen from '../../asssets/dresMenns.png' 
-// import Boots from '../../asssets/boots.png' 
 
 const Home = () => {
 
   const [events] = useState([
     {
       id: 1,
-      // icen1: ,
       image: Rukzak,
       name: 'Stylish Beckpok',
-      // icenStar: ,
       price: '$20. 00'
     },
     {
       id: 2,
-      // icen1: ,
       image: DressMen,
       name: 'T-short',
-      // icenStar: ,
       price: '$20. 00',
       subPrice: '540. 00'
     }

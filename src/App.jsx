@@ -1,7 +1,6 @@
 import './App.css';
 // Imports
 import { Route, Routes, Link} from 'react-router-dom';
-// import { useState } from 'react';
 import Home from './pages/home/Home'
 import Categories from './pages//categories/Categories';
 import Wallet from './pages/wallet/Wallet';
