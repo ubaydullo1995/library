@@ -1,51 +1,12 @@
-import React, { useState } from 'react'
-import './home.css'
+import React from 'react'
+import { Link } from 'react-router-dom';
 
-// Import images
-import Rukzak from '../../asssets/rukzak.png' 
-import DressMen from '../../asssets/dresMenns.png' 
 
 const Home = () => {
-
-  const [events] = useState([
-    {
-      id: 1,
-      image: Rukzak,
-      name: 'Stylish Beckpok',
-      price: '$20. 00'
-    },
-    {
-      id: 2,
-      image: DressMen,
-      name: 'T-short',
-      price: '$20. 00',
-      subPrice: '540. 00'
-    }
-  ])
-
   return (
-    <div>
-      <h1>Home</h1>
-      <div className="cartContainer">
-        <div className="cart">
-          {events.map((event) => {
-            return (
-              <div className="cartInner" key={event.id}>
-                <img src={event.image} alt={event.name}/>
-                <div className='subCart'>
-                  <div className='subCartName display'>
-                    <h2>{event.name}</h2>
-                  </div>
-                  <div className="preces">
-                    <p>{event.price}</p>
-                    <p>{event.subPrice}</p>
-                  </div>
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+    <div >
+      <h1><Link to="/home">Home</Link></h1>  
+      <h1><Link to="/section">Section</Link></h1>
     </div>
   )
 }
