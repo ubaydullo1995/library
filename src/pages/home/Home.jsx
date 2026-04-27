@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div >
       <h1><Link to="/home">Home</Link></h1>  
-      <h1><Link to="/section">Section</Link></h1>
+      {/* <h1><Link to="/section">Section</Link></h1> */}
     </div>
   )
 }
